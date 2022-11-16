@@ -60,7 +60,7 @@ describe("Admin Invoices Index Page") do
 
   describe("Then I see the total revenue from this invoice (not including discounts)") do
     it("And I see the total discounted revenue from this invoice which includes bulk discounts in the calculation") do
-      expect(page).to(have_content(@invoice_1.total_revenue))
+      expect(page).to(have_content("Discounted price: 30.0"))
     end
   end
 end

@@ -104,7 +104,6 @@ RSpec.describe("bulk discount index") do
 
   it("display holiday") do
     visit(merchant_bulk_discounts_path(@merchant1.id))
-    save_and_open_page
     expect(page).to(have_content("Holiday Info"))
   end
 end
